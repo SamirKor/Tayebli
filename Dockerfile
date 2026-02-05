@@ -1,14 +1,10 @@
-# Use official PHP Apache image
 FROM php:8.2-apache
 
-# Copy all your files to Apache web directory
+# Install MySQLi extension
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+
+# Copy all files
 COPY . /var/www/html/
-
-# Set proper permissions
-RUN chmod -R 755 /var/www/html
-
-# Expose port 80
-EXPOSE 80
 
 # Start Apache
 CMD ["apache2-foreground"]
