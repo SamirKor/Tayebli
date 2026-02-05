@@ -1,0 +1,87 @@
+*
+{
+    margin: 0;
+}
+
+.all
+{
+    background-color: #101828;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.RFS
+{
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px; */
+    /* padding: 10px 50px 10px 50px; */
+    width: 25vw;
+    
+}
+
+.chef-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #FF914D;
+    stroke-width: 2;
+}
+
+.RFS p
+{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px;
+}
+
+.RFS a
+{
+    color: oklch(.708 0 0);
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    transition: color 0.12s ease;
+
+}
+
+.RFS a:hover
+{
+    color: white;
+}
+
+.logo a
+{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.icons i
+{
+    margin: 8px;
+    font-size: 20px;
+    color: oklch(.708 0 0);
+    transition: color 0.12s ease;
+}
+
+.icons i:hover
+{
+    color: white;
+}
+
+.icons
+{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px)
+{
+    .all
+    {
+        flex-direction: column;
+    }
+}
