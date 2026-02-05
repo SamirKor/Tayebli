@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "localhost";
+$hostname = "nozomi.proxy.rlwy.net";
 $username = "root";      // Default for XAMPP
-$password = "";          // Empty for XAMPP
-$database = "tayeblidb";
+$password = "WSmFRcsyVWXWvWJDjwqGnkZBSHNnFuXQ";          // Empty for XAMPP
+$database = "railway";
 // Create MySQLi connection
 $connection = mysqli_connect($hostname, $username, $password, $database);
 
