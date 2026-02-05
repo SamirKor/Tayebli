@@ -5,7 +5,7 @@ $username = "root";      // Default for XAMPP
 $password = "WSmFRcsyVWXWvWJDjwqGnkZBSHNnFuXQ";          // Empty for XAMPP
 $database = "railway";
 // Create MySQLi connection
-//$connection = mysqli_connect($hostname, $username, $password, $database);
+$connection = mysqli_connect($hostname, $username, $password, $database);
 
 // Check connection
 if (!$connection) {
@@ -24,3 +24,4 @@ define('AI_PROVIDER', 'gemini'); // Options: 'gemini' or 'deepseek'
 
 
 ?>
+
